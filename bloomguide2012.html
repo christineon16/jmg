@@ -83,23 +83,42 @@ body {
 
 </script>
 <script type="text/javascript" language="javascript">
+ <!--
+
   <!-- var idd="http://www.jeffersonmarketgarden.org/"  -->
   <!-- var idd="file:///C:/Documents%20and%20Settings/Owner/My%20Documents/"   -->
 
   <!-- var idd="http://jmgtest.atspace.co.uk/" -->
    var idd="" 
-  function popUpWin(filename,ht,wd)
-  {
-       mywindow=window.open (idd+filename,"","height="+ht +",width="+wd)
+   var newwindow=""
+   function popUpWin(filename,ht,wd)
+   {
+       //mywindow=window.open (idd+filename,"","height="+ht +",width="+wd)
        
+      if (newwindow.location && !newwindow.closed) 
+         {
+          newwindow.location.href = idd+filename;
+          newwindow.innerWidth=wd;
+          newwindow.innerHeight=ht;
       
+        
+          newwindow.focus(); 
+        }
+      else {
+           newwindow=window.open(idd+filename,'htmlname','width='+wd + ',height='+ht + ',resizable=1');
      
-        mywindow.moveTo(400,200)
+           newwindow.moveTo(0,0)  
+           }
+   }
 
-  }
-
-     
-
+   function tidy() 
+   {
+     if (newwindow.location && !newwindow.closed) 
+      {
+         newwindow.close(); 
+      }
+   }  
+ //-->
 </script>
 </head>
 	<script type="text/javascript" language="javascript" charset="utf-8">
@@ -121,7 +140,7 @@ body {
 		}
 	//-->
 	</script>
-	<body>
+	<body  onUnload="tidy()">
 	<script language="JavaScript1.2">mmLoadMenus();</script>
     <br/>
     <!-- Outer Table -->
@@ -166,7 +185,7 @@ body {
                       <td valign="top" width="200">March-April</td>
                     
 	     			<td valign="top" width="200"><img src="bloomguide_files/stockvault-magnolia121127-small.jpg"  alt="magnolia"  width="50" height="50"
- onclick="popUpWin('bloomguide_files/stockvault-magnolia121127.jpg' ,'480','640')"  ></td>
+ 					onclick="popUpWin('bloomguide_files/stockvault-magnolia121127.jpg' ,'480','640')"  ></td>
 
 			 
 
@@ -176,7 +195,7 @@ body {
                       <td valign="top" width="200">Grape Hyacinths</td>
                       <td valign="top" width="200">March-April</td>
                      
-	      <td valign="top" width="200"><img src="bloomguide_files/grapehyacinth.JPG " alt="grape hyacinth" width="50" height="50" 
+	      <td valign="top" width="200"><img src="bloomguide_files/grapehyacinthsmall.JPG " alt="grape hyacinth" width="50" height="50" 
 				onclick="popUpWin('bloomguide_files/grapehyacinth.JPG','640','480')"  ></td>
                     
  	 </tr>
@@ -185,8 +204,8 @@ body {
                    <td valign="top" width="200">Spring Bulbs</td>
                       <td valign="top" width="200">March-May</td>
                      
-	      		<td valign="top" width="200"><img src="bloomguide_files/stockvault-yellow-flower130202-small.jpg" alt="tulip" width="50" height="50"
-		onclick="popUpWin('bloomguide_files/stockvault-yellow-flower130202.jpg','480','640')"  ></td>
+	      		<td valign="top" width="200"><img src="bloomguide_files/tulip-small.jpg" alt="tulip" width="50" height="50"
+		onclick="popUpWin('bloomguide_files/tulip.jpg','256','192')"  ></td>
 
 			
 
@@ -216,13 +235,7 @@ body {
 					onclick="popUpWin('bloomguide_files/azalea.JPG','480','640')"></td>
                     </tr>
 				<tr>
-                     <tr>
-                      <td valign="top" width="200">Amaryllis</td>
-                      <td valign="top" width="200">April-May</td>
-                    
-	   			<td valign="top" width="200"><img src="bloomguide_files/NakedLady-small.jpg" alt="amaryllis"  width="50" height="50" 
-					onclick="popUpWin('bloomguide_files/NakedLady.jpg','640','502')">   *</td>
-                    </tr>
+                     
 
                      <tr>
                       <td valign="top" width="200">Lilacs</td>
@@ -248,31 +261,23 @@ body {
              </tr>  
              <tr>       
 	      
-	     <tr>
-                      <td valign="top" width="200">Allium</td>
-                      <td valign="top" width="200">April-September</td>
-                      
-	      <td valign="top" width="200">
-                      <img src="bloomguide_files/Iliumsmall.JPG" alt="allium" width="50" height="50" 
-				 onclick="popUpWin('bloomguide_files/Iliumlarge.JPG' ,'480','640' )"  ></td>
-                    </tr>
-                   
-				<tr>
+	     
+				
                       <td valign="top" width="200">Roses</td>
                       <td valign="top" width="200">April-June</td>
                      
 	     			<td valign="top" width="200"><img src="bloomguide_files/Rose-4-small.jpg" width="50" height="50"
 					onclick="popUpWin('bloomguide_files/Rose-4.jpg' ,'720','480' )" >   *</td>
-                   </tr>
-	    <tr>
+             </tr>
+	       <tr>
 
 
 
                       <td valign="top" width="200">Native Wildflowers</td>
                       <td valign="top" width="200">April-September</td>
                       
-	    <td valign="top" width="200"><img src="bloomguide_files/stockvault-flower-power111205-small.jpg"  alt="daisy"  width="50" height="50" 
-		onclick="popUpWin('bloomguide_files/stockvault-flower-power111205.jpg ' ,'427','640' )"  ></td>
+	    			<td valign="top" width="200"><img src="bloomguide_files/stockvault-flower-power111205-small.jpg"  alt="daisy"  width="50" height="50" 
+					onclick="popUpWin('bloomguide_files/stockvault-flower-power111205.jpg ' ,'427','640' )"  ></td>
                     </tr>
                    <tr>
                       <td valign="top" width="200">Rhododendrons</td>
@@ -282,11 +287,18 @@ body {
                     </tr>
 
 		       <tr>
+                    <tr>
+                      <td valign="top" width="200">Dogwood </td>
+                      <td valign="top" width="200">May-June</td>
+                     
+			    <td valign="top" width="200"><img src="bloomguide_files/freestockphotos-dogwood-4710-small.jpg" width="50" height="50" alt="dogwood"
+				 onclick="popUpWin('bloomguide_files/freestockphotos-dogwood-4710.jpg','300','400')" ></td>
+                    </tr>
                       <td valign="top" width="200">Japanese Pagoda Tree</td>
                       <td valign="top" width="200">May-July</td>
                   
-	      <td valign="top" width="200"><img src="bloomguide_files/treesflowerscom-192310SX3-jappagoda.jpg" width="50" height="50" 
-			onclick="popUpWin('bloomguide_files/treesflowerscom-192310SX3.jpg ','720','480')"  ></td>
+	      		<td valign="top" width="200"><img src="bloomguide_files/treesflowerscom-192310SX3-jappagoda.jpg" width="50" height="50" 
+					onclick="popUpWin('bloomguide_files/treesflowerscom-192310SX3.jpg ','720','480')"  ></td>
                     </tr>
                    <tr>
                       <td valign="top" width="200">Crabapples </td>
@@ -295,23 +307,10 @@ body {
 			    <td valign="top" width="200"><img src="bloomguide_files/freepic-flowering-crab-apple-tree_19-100196.jpg" alt="crabapple" width="50" height="50"
 						onclick="popUpWin('bloomguide_files/stockvault-flowering-crab-apple-tree100196.jpg','480','640')"  ></td>
                     </tr>
-			<tr>
-                      <td valign="top" width="200">Moss Roses </td>
-                      <td valign="top" width="200">May-October</td>
-                      
-			    <td valign="top" width="200"><img src="bloomguide_files/Portulaca-small.jpg" width="50" height="50" alt="moss rose"
-
-				onclick="popUpWin('bloomguide_files/Portulaca.jpg','296','640')"          >    *</td>
-                    </tr>
+			
 
                     
-                    <tr>
-                      <td valign="top" width="200">Dogwood </td>
-                      <td valign="top" width="200">June</td>
-                     
-			    <td valign="top" width="200"><img src="bloomguide_files/freestockphotos-dogwood-4710-small.jpg" width="50" height="50" alt="dogwood"
-				 onclick="popUpWin('bloomguide_files/freestockphotos-dogwood-4710.jpg','300','400')" ></td>
-                    </tr>
+                   
 
                     <tr>
                       <td valign="top" width="200">Spireas </td>
@@ -322,19 +321,22 @@ body {
 				<img src="bloomguide_files/cubits-playpengraphics-free-spirea9c6ddd-175-small.jpg" width="50" height="50" onclick="popUpWin('bloomguide_files/cubits-playpengraphics-free-spirea9c6ddd-175.jpg','175','175')" alt="spirea"></td>
                     </tr>
                     <tr>
+                      <td valign="top" width="200">American Yellowwood</td>
+                      <td valign="top" width="200">June-July</td>
+                     
+			    <td valign="top" width="200"><img src="bloomguide_files/yellowwood-small.JPG" 
+				alt="yellowwood" width="50" height="50"
+					onclick="popUpWin('bloomguide_files/yellowwood.JPG','512','384')" ></td>
+                    </tr>
+                    <tr>
                       <td valign="top" width="200">Phlox</td>
-                      <td valign="top" width="200">June-October</td>
+                      <td valign="top" width="200">July-September</td>
                      
 			    <td valign="top" width="200"><img src="bloomguide_files/phlox.jpg" alt="phlox" width="50" height="50"
 				onclick="popUpWin('bloomguide_files/Phlox-large.jpg','436','640')">   *</td>
                     </tr>
 
-                   <tr>
-                      <td valign="top" width="200">American Yellowwood</td>
-                      <td valign="top" width="200">June-August</td>
-                     
-			    <td valign="top" width="200" height="50"></td>
-                    </tr>
+                   
  
 
   
@@ -344,7 +346,7 @@ body {
                      
 			    <td valign="top" width="200"><img src="bloomguide_files/flowerpicutresorg-butterfly-bush-flower_14-small.jpg" 
 				alt="butterfly" width="50" height="50"
-					onclick="popUpWin('bloomguide_files/flowerpicutresorg-butterfly-bush-flower_14.jpg','533','800')" ></td>
+					onclick="popUpWin('bloomguide_files/flowerpicutresorg-butterfly-bush-flower_14.jpg','433','680')" ></td>
                     </tr>
 
  			<tr>
@@ -359,7 +361,7 @@ body {
                       <td valign="top" width="200">July-September</td>
                       
 			    <td valign="top" width="200"><img src="bloomguide_files/Rudbeckia-small.jpg" width="50" height="50" alt="black-eyed susan"
-				 onclick="popUpWin('bloomguide_files/Rudbeckia.jpg','495','660')" >  *</td>
+				 onclick="popUpWin('bloomguide_files/Rudbeckia.jpg','640','632')" >  *</td>
                     </tr>
 
 				<tr>
@@ -371,7 +373,7 @@ body {
                     </tr>
                     <tr>
                       <td valign="top" width="200">Stonecrop</td>
-                      <td valign="top" width="200">August-November</td>
+                      <td valign="top" width="200">August-September</td>
                       
 			    <td valign="top" width="200"><img src="bloomguide_files/sedum.jpg" width="50" height="50" alt="stonecrop"
 				onclick="popUpWin('bloomguide_files/sedum-large.jpg','640','480')">  *</td>
