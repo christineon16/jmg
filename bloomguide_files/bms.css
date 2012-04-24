@@ -1,0 +1,427 @@
+/*******************************************************/
+/* Modules-Home-Main */
+/* The title of the site above the nav bar */
+.prework_siteheader
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	color: #FF9933;
+	line-height: 22px;
+}
+/* the tabs on prework hub nav bar */
+a.tabtext_on, .tabtext_on
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	line-height: 14px;
+	text-decoration: none;
+	background-color: transparent;
+}
+a.tabtext_off, .tabtext_off
+{
+	font-family: Arial, "sans-serif";
+	font-size: 12px;
+	color: #666666;
+	line-height: 14px;
+	text-decoration: none;
+	background-color: transparent;
+}
+/* subnav is the line of links just below the tabs in dark grey */
+a.subnav_on, .subnav_on
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 11px;
+	color: #ffffff;
+	line-height: 12px;
+	text-decoration: none;
+	background-color: transparent;
+}
+a.subnav_off, .subnav_off
+{
+	font-family: Arial, "sans-serif";
+	font-size: 11px;
+	color: #cccccc;
+	line-height: 12px;
+	text-decoration: none;
+	background-color: transparent;
+}
+.popup
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-style: italic;
+	font-size: 10px;
+	color: #cccccc;
+	line-height: 10px;
+	text-decoration: none;
+}
+.moduleson
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 10px;
+	color: #009900;
+	line-height: 10px;
+}
+.modulesoff
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #990000;
+	line-height: 10px;
+}
+/*******************************************************/
+/* WELCOME MODULE */
+.suitetext
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 12px;
+	color: #666666;
+	line-height: 12px;
+}
+.moduletext
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 9px;
+	color: #999999;
+	line-height: 9px;
+}
+.modruleon
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 9px;
+	color: #00cc33;
+	line-height: 9px;
+}
+.modruleoff
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 9px;
+	color: #cc3300;
+	line-height: 9px;
+}
+/*******************************************************/
+/* SUPPORT DESK */
+/* For subtabs that appear on the Support Desk  */
+.subtabtext_on
+{
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 12px;
+	color: #666666;
+	line-height: 16px;
+	text-decoration: none;
+}
+.subtabtext_off
+{
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-family: Arial, "sans-serif";
+	font-size: 12px;
+	color: #999966;
+	line-height: 16px;
+	text-decoration: none;
+}
+.filled_subtab { background-color: #ffffcc; }
+.postcount
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	color: #cccccc;
+	line-height: 18px;
+}
+.sdfaqentry
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-style: italic;
+	font-size: 12px;
+	color: #333333;
+	line-height: 14px;
+}
+/*******************************************************/
+/* this is for the four text links above the nav bar */
+.linksnav
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 10px;
+	color: #666666;
+	line-height: 12px;
+}
+.modulestext
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 10px;
+	color: #666666;
+	line-height: 16px;
+}
+.breadcrumb
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #666666;
+	line-height: 12px;
+}
+.navtext
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 11px;
+	color: #666666;
+	line-height: 13px;
+}
+/* ******************************************************** */
+.sectiontitle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #003366;
+}
+.sectiontitlealt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003366;
+	font-style: italic;
+	line-height: 22px;
+}
+.bluetitle
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	color: #004C7E;
+	line-height: 22px;
+}
+.content
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.contentbold
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 10px;
+	color: #333333;
+	line-height: 12px;
+}
+.bigcontent
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 12px;
+	color: #333333;
+	line-height: 16px;
+}
+.biglabel
+{
+	font-family: Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 12px;
+	color: #333333;
+	line-height: 12px;
+}
+.bigdata
+{
+	font-family: Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	line-height: 12px;
+}
+.fineprint
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #014F80;
+	line-height: 10px;
+}
+/* ******************************************************** */
+.lgblue
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-size: 14px;
+	color: #004C7E;
+	line-height: 16px;
+}
+.navbar
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 11px;
+	color: #004C7E;
+	line-height: 13px;
+	background-color: #ccdde6;
+}
+.adminnavbar
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 11px;
+	color: #ffffff;
+	line-height: 13px;
+	background-color: #cc0000;
+}
+.navline { background-color: #007aad; }
+.plavixblue { background-color: #004c7e; }
+.pullquote
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 20px;
+	color: #004C7E;
+	line-height: 24px;
+}
+.contentsmall
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #004C7E;
+	line-height: 10px;
+}
+.sidebar
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #333333;
+	line-height: 12px;
+	font-style: italic;
+}
+.sidebarheader
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 14px;
+	color: #ccdde6;
+	line-height: 16px;
+}
+.sidebartext
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 11px;
+	color: #000000;
+	line-height: 13px;
+}
+.sidebartextbold
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 11px;
+	color: #000000;
+	line-height: 13px;
+}
+.smalldkgrey
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #333333;
+	line-height: 12px;
+}
+.smallltgrey
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 10px;
+	color: #999999;
+	line-height: 12px;
+}
+.lgblack
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: normal;
+	font-size: 14px;
+	color: #000000;
+	line-height: 14px;
+}
+.groupname
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 28px;
+	color: #004C7E;
+	line-height: 28px;
+	text-decoration: none;
+}
+.sp
+{
+	font-family: "sans-serif";
+	font-weight: normal;
+	font-size: 1px;
+	color: #ffffff;
+	line-height: 0px;
+}
+.tinybrighttext
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 9px;
+	color: #ffffff;
+	line-height: 9px;
+}
+.maincolor
+{
+	background-color: #666666;
+}
+.lgbright
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 14px;
+	color: #ccdde6;
+	line-height: 14px;
+}
+.contentitalic
+{
+	font-family: arial, helvetica, "sans-serif";
+	font-style: italic;
+	font-size: 12px;
+	color: #004C7E;
+	line-height: 14px;
+}
+/*************************************************/
+.calendarHeader { 
+	font-family: Arial, "sans-serif";
+    font-weight: bolder; 
+    color: #666666; 
+    background-color: #FFFFCC; 
+	font-size: 12px;
+	line-height: 12px;
+}
+.calendarToday { 
+    background-color: #FFFFFF;
+	text-decoration: none;
+}
+.calendar { 
+	font-family: Arial, "sans-serif";
+	font-size: 12px;
+    background-color: #FFFFCC;
+	line-height: 16px;
+	text-decoration: none;
+}
+/*************************************************/
