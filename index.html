@@ -6,7 +6,7 @@
 	<title>The Jefferson Market Garden</title>
 	<link rel="stylesheet" type="text/css" href="bms.css">
 	<link rel="stylesheet" type="text/css" href="jmg.css">
-	<script src="ga.js" async="" type="text/javascript"></script><script language="JavaScript">
+	<script language="JavaScript">
 <!--
 function mmLoadMenus() {
   if (window.mm_menu_1128103027_0) return;
@@ -49,8 +49,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 }
 //-->
 </script>
-	<script language="JavaScript" src="mm_menu.js"></script>
-	<style type="text/css">
+<script language="JavaScript" src="mm_menu.js"></script>
+<style type="text/css">
 <!--
 .style1 {color: #393}
 a:link {
@@ -83,12 +83,12 @@ body {
 	font-style: italic;
 }
 .style4 {font-size: 24px; font-weight: bold; color: #393; font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; }
-<!-- CMG start 5/23/12  -->
+
 .facebook { overflow: hidden; border: 1px solid #d5d5d5; }
-<! CMG end 5/23/12  -->
+
 -->
-    </style>
-	<script type="text/javascript">
+ </style>
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22943046-1']);
@@ -120,9 +120,63 @@ body {
 			var pop = window.open('http://www.jeffersonmarketgarden.org/Slideshow/Viewer&ShowID='+id, 'Index', 'scrollbars=yes, resizable=yes, toolbar=no, location=no, directories=no, status=yes, menubar=no, width=650, height=600');
 		}
 	//-->
-	</script></head>
+</script>
+ <script type="text/javascript" language="javascript">
+ <!--
+
+  <!-- var idd="http://www.jeffersonmarketgarden.org/"  -->
+  <!-- var idd="file:///C:/Documents%20and%20Settings/Owner/My%20Documents/"   -->
+
+  <!-- var idd="http://jmgtest.atspace.co.uk/" -->
+   var idd="" 
+   var newwindow=""
+   function popUpWindow(filename)
+   {
+       //mywindow=window.open (filename,"","height=500,width=800")
+ 
+      
+      if (newwindow.location && !newwindow.closed) 
+      {
+          
+         
+                if  (navigator.appName != 'Microsoft Internet Explorer')
+  	{
+          		newwindow.innerWidth=800;
+          		newwindow.innerHeight=560;
+	}	
+	else
+	{     
+			newwindow.focus(); 
+          			newwindow.resizeTo(800,560);
+		
+                }
+                newwindow.focus(); 
+       }
+     else
+     {
+          
+           newwindow=window.open(filename,'htmlname','width=800,height=560,resizable=1');
+     
+           window.document.write(newwindow.location + "  " + newwindow.closed);
+         newwindow.focus(); 
+      }
+   }
+
+   function tidy() 
+   {
+     if (newwindow.location && !newwindow.closed) 
+      {
+         newwindow.close(); 
+      }
+   }  
+ //-->
+</script>
+
+
+</head>
 	
-	<body>
+<body>
+           
 	<script language="JavaScript1.2">mmLoadMenus();</script><span id="menuContainer"><div id="menuLayer0" style="position: absolute; z-index: 1; left: -300px; top: -300px; visibility: hidden; color: rgb(119, 119, 119); width: 171px; height: 44px;">
   <div id="menuLite0" style="position: absolute; z-index: 1; left: 0px; top: 0px; height: 44px; width: 171px;" onmouseout="mouseoutMenu();">
 	 <div id="menuFg0" style="position: absolute; left: 0px; top: 0px; height: 44px; width: 171px;">
@@ -238,26 +292,32 @@ body {
 				  <table style="background: #eee; opacity: .9; filter: alpha(opacity=90); border: 1px solid #444;" border="0" cellpadding="4"                                                                  cellspacing="0" width="152">
 				   <tbody><tr>
 				   <td style="15" align="left">
-				New:      <a 
+                                                                  New :<a href=""
+                                                        onclick="popUpWindow('slides.html')">Friends'<br>Garden Party</a>
+
+			<!--	New:      <a 
 			href="https://picasaweb.google.com/106698229213022983245/JMGGardenParty2012?authkey=Gv1sRgCIuDtbzKnvOKEQ#5793016045416567346"  
-				 target="blank"><strong>Friends' Garden Party</strong></a> <br>
+				 target="blank"><strong>Friends' Garden Party</strong></a> <br>  -->
                               
                            </td>                                
-			 	   </tr>	
+	         </tr>	
 
-			       </tbody></table>
-			       <br>
+	         </tbody></table>
+                         <br>
                           <table style="background: #eee; opacity: .9; filter: alpha(opacity=90); border: 1px solid #444;" border="0" cellpadding="4" cellspacing="0" width="152">
 				   <tbody><tr>
 				   <td style="15" align="left">
-			 		New: <a href="https://picasaweb.google.com/106698229213022983245/TheBloomsOfSummer2012CourtesyOfLindaCarmado?authkey=Gv1sRgCL3Lk-bDtMuMygE#5784113969233512626"   target="_blank"><strong>Blooms of 2012</strong></a> <br>
+                                                                New :<a href=""
+                                                        onclick="popUpWindow('bloomslides.html')">Blooms of<br>2012</a>
+
+			 	<!--	New: <a href="https://picasaweb.google.com/106698229213022983245/TheBloomsOfSummer2012CourtesyOfLindaCarmado?authkey=Gv1sRgCL3Lk-bDtMuMygE#5784113969233512626"   target="_blank"><strong>Blooms of 2012</strong></a> <br>  -->
                               
                            </td>                                
-			 	   </tr>	
+	           </tr>	
 
-			       </tbody></table>
-			       <br>
-				<!--CMG end 09/10/2012 -->
+		</tbody></table>
+		<br>
+		<!--CMG end 09/10/2012 -->
 
                           <table style="background: none repeat scroll 0% 0% rgb(238, 238, 238); opacity: 0.9; border: 1px solid rgb(68, 68, 68);" border="0" cellpadding="4" cellspacing="0" width="152">
                               <tbody><tr>
