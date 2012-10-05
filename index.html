@@ -121,6 +121,7 @@ body {
 		}
 	//-->
 </script>
+<!-- CMG start 09/10/2012 -->
  <script type="text/javascript" language="javascript">
  <!--
 
@@ -133,31 +134,29 @@ body {
    function popUpWindow(filename)
    {
        //mywindow=window.open (filename,"","height=500,width=800")
- 
-      
+
       if (newwindow.location && !newwindow.closed) 
       {
-          
+             newwindow.location.href=filename;
          
                 if  (navigator.appName != 'Microsoft Internet Explorer')
   	{
           		newwindow.innerWidth=800;
-          		newwindow.innerHeight=560;
+          		newwindow.innerHeight=565;
 	}	
 	else
 	{     
-			newwindow.focus(); 
-          			newwindow.resizeTo(800,560);
+		newwindow.focus(); 
+          		newwindow.resizeTo(800,565);
 		
                 }
                 newwindow.focus(); 
        }
      else
      {
-          
-           newwindow=window.open(filename,'htmlname','width=800,height=560,resizable=1');
-     
-           window.document.write(newwindow.location + "  " + newwindow.closed);
+
+           newwindow=window.open(filename,'htmlname','width=800,height=565,resizable=1');
+             
          newwindow.focus(); 
       }
    }
@@ -175,8 +174,8 @@ body {
 
 </head>
 	
-<body>
-           
+<body onUnload="tidy()">
+  <--! CMG end 09/10/2012 -->         
 	<script language="JavaScript1.2">mmLoadMenus();</script><span id="menuContainer"><div id="menuLayer0" style="position: absolute; z-index: 1; left: -300px; top: -300px; visibility: hidden; color: rgb(119, 119, 119); width: 171px; height: 44px;">
   <div id="menuLite0" style="position: absolute; z-index: 1; left: 0px; top: 0px; height: 44px; width: 171px;" onmouseout="mouseoutMenu();">
 	 <div id="menuFg0" style="position: absolute; left: 0px; top: 0px; height: 44px; width: 171px;">
@@ -292,12 +291,8 @@ body {
 
 				   <tbody><tr>
 				   <td style="15" align="left">
-                                                                  New :<a href=""
-                                                        onclick="popUpWindow('slides.html')">Friends'<br>Garden Party</a>
+                                                                  New :<a href="javascript:popUpWindow('slides.html')">Friends'<br>Garden Party</a>
 
-			<!--	New:      <a 
-			href="https://picasaweb.google.com/106698229213022983245/JMGGardenParty2012?authkey=Gv1sRgCIuDtbzKnvOKEQ#5793016045416567346"  
-			 target="blank"><strong>Friends' Garden Party</strong></a> <br>  -->
                               
                            </td>                                
 	         </tr>	
@@ -307,11 +302,8 @@ body {
                           <table style="background: #eee; opacity: .9; filter: alpha(opacity=90); border: 1px solid #444;" border="0" cellpadding="4" cellspacing="0" width="152">
 				   <tbody><tr>
 				   <td style="15" align="left">
-                                                                New :<a href=""
-                                                        onclick="popUpWindow('bloomslides.html')">Blooms of<br>2012</a>
-
-			 	<!--	New: <a href="https://picasaweb.google.com/106698229213022983245/TheBloomsOfSummer2012CourtesyOfLindaCarmado?authkey=Gv1sRgCL3Lk-bDtMuMygE#5784113969233512626"   target="_blank"><strong>Blooms of 2012</strong></a> <br>  -->
-                              
+                                                                New :<a href="javascript:popUpWindow('bloomslides.html')">Blooms of<br>2012</a>
+         	 	            
                            </td>                                
 	           </tr>	
 
@@ -344,7 +336,7 @@ body {
                                         <span class="style13">Lily with Hydrangea</span>
                                        
                                         <p class="text style11" align="center">photo by Linda Carmado</p></td>
-						 <!-- CMG end 09/10/2012  -->
+		 <!-- CMG end 09/10/2012  -->
                                   </tr>
                                 </tbody>
                               </table>
@@ -375,21 +367,19 @@ accomplish together.<br>
                         </td>
                         <td class="style15" style="border-left: 2px dotted #ccc;" valign="top"><h3 class="prework_siteheader style1"><a name="events"></a><a href="events.html">Events 2012</a></h3>
 		           
-	          <CMG start 09/0/2012  get rid of month announcement -->		
+	          <CMG start 09/0/2012  get rid of month announcement at top of events list-->		
 		
                           <p><strong><a href="Images/childrens_flower_festival.pdf" target="_blank">May 19:<br>
                             Children's Festival of Flowers</a></strong><br>
                           11 am-2 pm </p>
-	        <!-- CMG start 5/23/12 -->
-
+	
                           <p><img src="Images/DSC_5399.jpg" alt="spring festival" height="161" width="136"></p>
-	       <!-- CMG end 5/23/12 -->
-				  
+			  
                        <p><strong><a href="Images/SummerMusic.pdf"  target="_blank">Summer Music in the Garden</a><br>
                               </strong>Wednesdays <br>
                           5-6 pm</p>
                           <p><img src="Images/summer_music_in_the_garden.jpg" alt="guitar playing in the garden" height="149" width="136"></p>
-                          <!-- CMG start 09/10/2012 -->
+                          <!-- CMG start 09/10/2012  make adopt a pot a jpg instead of slow loading pdf  -->
                           <p><strong><a href="Images/adoptapot.jpg" target="_top" >October 6:<br>
                           <!CMG end 09/10/2012 -->
                            Adopt-a-Pot  <br>
@@ -401,7 +391,7 @@ accomplish together.<br>
 		Harvest Festival  <br>for Children <br></a></span></strong></p>
 
                           <p> <img src="Images/pumpkinhead-HOME.jpg" alt="pumpkin" height="144" width="136"></p>
-              		<!-- CMG start 09/10/2012 -->
+              		<!-- CMG start 09/10/2012  -->
 		<p class="style8">October: Plant<br>
 		  Your Bulbs</p>
 		 <!-- CMG end 09/10/2012 -->
