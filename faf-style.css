@@ -1,0 +1,32 @@
+.faferror { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #900; 
+	font-size: 12px; 
+	font-weight: bold; 
+	line-height: 14px; 
+}
+.fafmessages { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #900; 
+	font-size: 12px; 
+	font-weight: bold; 
+	line-height: 14px; 
+}
+.formlabel { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666; 
+	font-size: 10px; 
+	font-weight: bold; 
+	line-height: 14px; 
+}
+.fafboldbody  { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: black; 
+	font-size: 10pt; 
+	font-weight: bold; 
+}
+.fafbody  { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: black; 
+	font-size: 10pt; 
+}
